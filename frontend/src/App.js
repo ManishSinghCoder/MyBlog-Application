@@ -13,6 +13,7 @@ import Blogupdate from './Component/Blogupdate';
 import Content from './Component/Content'
 import './Component/All.css'
 import Allblogs from './Component/Allblogs';
+import Contentid from './Component/Contentid';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route exact path='/blogupdate/:id' component={Blogupdate}/>
           <Route exact path='/Content/:id' component={Content}/>
           <Route exact path='/Allblogs' component={Allblogs}/>
+          <Route exact path='/Contentid/:id' component={Contentid}/>
         </Switch>
       </Layout>
     </Router>

@@ -68,6 +68,9 @@ const Login = ({ login,history }) => {
         </div>
     )
 };
+const mapStateToProps = state => ({
+    users: state.auth.users
+});
 
 
 export default connect(null, { login })(Login);

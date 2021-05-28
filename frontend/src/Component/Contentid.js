@@ -1,18 +1,18 @@
 import React, { useState,useEffect } from 'react';
 import { connect, useSelector } from 'react-redux'
-import { allblog } from '../actions/auth'
+import { blogupdate } from '../actions/auth'
 import './All.css'
 
 
-const Content = ({ match }) => {
+const Content = ({ match ,blogupdate}) => {
     const blogu = useSelector(state=>(state.auth))
-    const {alblog,isAuthenticated} = blogu
+    const {blogs,isAuthenticated} = blogu
     const [blogdata, setBlogData,] = useState({ 
         user: isAuthenticated.id
     });
     const {id}= match.params
     useEffect(()=>{
-        const ids = alblog.find(item=> item.id==id)
+        const ids = blogs.find(item=> item.id==id)
         setBlogData(ids)
     },[])
     
@@ -27,6 +27,6 @@ const Content = ({ match }) => {
 }
 
 
-export default connect(null, { allblog })(Content);
+export default connect(null, { blogupdate })(Content);
 
 

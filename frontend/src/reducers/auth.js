@@ -10,7 +10,8 @@ import {
     BLOGUPDATE,
     BOLGDELETE,
     ALLBLOGS,
-    BLOG_LOAD_SUCCESS
+    BLOG_LOAD_SUCCESS,
+   
 }
     from '../actions/types';
 
@@ -83,6 +84,7 @@ export default function auth(state = initialState, action) {
             isAuthenticated:payload
             
             }
+        
         case ALLBLOGS:
             return{
                 ...state,
@@ -93,6 +95,7 @@ export default function auth(state = initialState, action) {
                 ...state,
                 blogs:[...state.blogs.slice(0,payload.index),payload.blogup,...state.blogs.slice(payload.index+1)]
             }
+       
         case BOLGDELETE:
             return{
                 ...state,

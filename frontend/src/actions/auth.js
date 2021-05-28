@@ -13,7 +13,8 @@ import {
     BLOGUPDATE,
     BOLGDELETE,
     ALLBLOGS,
-    BLOG_LOAD_SUCCESS
+    BLOG_LOAD_SUCCESS,
+    
 }
     from './types';
 
@@ -136,6 +137,7 @@ export const allblog = (isAtuthanticated) => async dispatch =>{
 
 }
 
+
 export const blogupdate =(index,id,isAtuthanticated,blogdata,history)=> async dispatch=>{
 const config ={
     headers:{
@@ -153,6 +155,7 @@ dispatch({
 history.push('/logview')
 
 }
+
 export const blogdelete = (index,id,isAtuthanticated)=> async dispatch=>{
     const config ={
         headers:{

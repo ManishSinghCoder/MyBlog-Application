@@ -24,7 +24,7 @@ const Blogview = ({ blogview, blogdelete,allblog, history }) => {
     }
    
     const handleup = (id) => {
-        history.push(`/Content/${id}`)
+        history.push(`/Contentid/${id}`)
     }
     
     const onSubmit = e => {
@@ -39,7 +39,7 @@ const Blogview = ({ blogview, blogdelete,allblog, history }) => {
             headStyle={{backgroundColor: '#f1efef', border: 50 }}
                 hoverable
                 style={{ width: 300 }} title={item.title}  >
-                <Truncate lines={1} ellipsis={<span>... <Link href='/Content' onClick={() => handleup(item.id)} >Read more...</Link></span>}>
+                <Truncate lines={1} ellipsis={<span>... <Link href='/Contentid' onClick={() => handleup(item.id)} >Read more...</Link></span>}>
                     {item.content}
                 </Truncate>
                 <a id="an" onClick={() => handleupdate(item.id)}><CreateIcon/></a>

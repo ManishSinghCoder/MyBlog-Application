@@ -18,7 +18,7 @@ const Blogcreate = ({ blogcreate,history }) => {
         <div className='container mt-5' id="create">
             <h1>Create Your Blog</h1>
             <form onSubmit={e => onSubmit(e)} >
-                <div className='form-group'>
+                <div className='form-group' id="log">
                     BlogTitle:
                     <input id="form"
                         className='form-control'
@@ -30,7 +30,7 @@ const Blogcreate = ({ blogcreate,history }) => {
                         required
                     />
                 </div>
-                <div className='form-group'>
+                <div className='form-group' id="log">
                     BlogContent:
                     <div class="form-outline">
                         <textarea id="form"

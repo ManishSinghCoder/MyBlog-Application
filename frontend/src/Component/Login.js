@@ -30,10 +30,10 @@ const Login = ({ login,history }) => {
         <div className='container mt-5' id="login" >
             <ToastContainer/>
             {users ? <h4 id="use">{users}</h4> : <></>}
-            <h1>Sign In</h1>
-            <p>Sign into your Account</p>
+            <h1 id="log">LogIn</h1>
+            <p id="log">Login into your Account</p>
             <form onSubmit={e => onSubmit(e)}  >
-                <div className='form-group'>
+                <div className='form-group' id="lg">
                     Username:
                     <input id="form"
                         className='form-control'
@@ -45,7 +45,7 @@ const Login = ({ login,history }) => {
                         required
                     />
                 </div>
-                <div className='form-group'>
+                <div className='form-group' id="lg">
                     Password:
                     <input id="form"
                         className='form-control'
@@ -62,8 +62,8 @@ const Login = ({ login,history }) => {
         
             </form>
           
-            <p className="mt-3">
-                Don't have an Account? <Link to='/Signup'>SignUp</Link>
+            <p className="mt-3" >
+                Don't have an Account? <Link to='/Signup' id="lg">SignUp</Link>
             </p>
         </div>
     )

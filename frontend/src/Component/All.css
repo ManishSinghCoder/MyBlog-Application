@@ -124,7 +124,7 @@ body {
     margin-right: 90px;
     margin-left: 250px;
     padding: 10px;
-    background-color: #11656c;
+    opacity: 1.0;
     box-shadow: 5px 10px 10px 5px #aca7a7;
 }
 a{
@@ -150,8 +150,8 @@ a:hover {
     margin-right: 90px;
     margin-left: 250px;
     padding: 10px;
-    background-color: #aeb2b6;
-    box-shadow: 10px 10px 10px 10px #f1efef;
+    opacity: 1.0;
+    box-shadow: 10px 40px 40px 10px #f1efef;
 }
 #home{
     width: 80%;
@@ -177,24 +177,34 @@ a:hover {
     box-shadow: 10px 10px 10px 10px #2c2a2a;
 }
 #back{
-    background-color: #8494f0;
     
+    background-image: url("./91.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
+
 #login{
     width: 60%;
     padding: 10px;
     background-color: #88abce;
+    background-image: url("./log.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
     max-width: 100%;
     box-shadow: 10px 40px 40px 10px #f0ccea;
 }
 #signup{
+    opacity: 1;
     width: 50%;
     padding-right: 25px;
     padding-left: 25px;
     margin-right: 90px;
     margin-left: 250px;
     padding: 10px;
-    background-color: #88abce;
     box-shadow: 10px 40px 40px 10px #dbbfbf;
 
 }
@@ -261,4 +271,10 @@ a:hover {
 }
 #pa{
     text-align: left;
+}
+#log{
+    color: #b5b6b5;
+}
+#lg{
+    color: #1da728;
 }

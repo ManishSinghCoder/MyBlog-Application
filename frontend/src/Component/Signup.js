@@ -32,7 +32,7 @@ const Signup = ({ signUp,history }) => {
             <h1>Sign Up</h1>
             <p>Register your Account</p>
             <form onSubmit={e => onSubmit(e)}>
-                <div className='form-group'>
+                <div className='form-group' id="lg" >
                     First Name:
                 <input id="form"
                     className='form-control'
@@ -44,7 +44,7 @@ const Signup = ({ signUp,history }) => {
                     required
                     />
                 </div>
-                <div className='form-group' >
+                <div className='form-group' id="lg" >
                     Last Name:
                     <input id="form"
                         className='form-control'
@@ -56,7 +56,7 @@ const Signup = ({ signUp,history }) => {
                         required
                     />
                 </div>
-                <div className='form-group'>
+                <div className='form-group' id="lg">
                     Email:
                     <input id="form"
                         className='form-control'
@@ -68,7 +68,7 @@ const Signup = ({ signUp,history }) => {
                         required
                     />
                 </div>
-                <div className='form-group'>
+                <div className='form-group' id="lg">
                     Username:
                     <input id="form"
                         className='form-control'
@@ -80,7 +80,7 @@ const Signup = ({ signUp,history }) => {
                         required
                     />
                 </div>
-                <div className='form-group'>
+                <div className='form-group' id="lg">
                     Password:
                     <input id="form"
                         className='form-control'

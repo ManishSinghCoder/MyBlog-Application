@@ -43,7 +43,7 @@ const Blogview = ({ blogview, blogdelete,allblog, history }) => {
                     {item.content}
                 </Truncate>
                 <a id="an" onClick={() => handleupdate(item.id)}><CreateIcon/></a>
-                <a id="anc" onClick={() => handledelete(item.id)}> <DeleteIcon/></a>     
+                <a id="anc" onClick={() => { if(window.confirm('Are you sure you wish to delete this item?')) handledelete(item.id)}}> <DeleteIcon/></a>     
             </Card>)}
             </div>
 
